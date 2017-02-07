@@ -1,0 +1,42 @@
+In Class Assignment:
+
+- A customer service center tracks how customers
+score their service on a scale of 1-5, where 1 is best
+and 5 is worst
+
+- The manager of the service center has a display of all
+the cumulative scores for all the 100 service
+representatives under him (how many times a rep got
+each score)
+
+- Using no data structure other than arrays, keep a
+running total of how many times each rep got each
+score
+
+- Your solution should have (at least) 3 methods:
+- A constructor to initialize your D.S.
+- Add a new score for a rep
+- Get the current score totals for a rep. Values returned by
+  this method should not change over time as more scores
+  come in - they represent a “point in time”.
+
+HW 1 Assignment
+
+- Change ICA #2 to also track the average score for each
+rep for the last 20 scores the rep received
+
+- When/if a rep’s average drops below 2.5, print out to
+the system console the following message: “Rep “ +
+repID + “’s running average has dropped to “ +
+runningAverage. Only print this once for a given drop -
+do not print again as long as it stays below 2.5.
+
+- Add the following additional methods:
+	- get the average of a rep
+	- get both the average as well as the current cumulative scores of a rep
+	- reset the average and cumulative scores of a single rep to zero
+	- reset the averages and cumulative scores of all reps to zero
+
+- You may not use any data structure other than an
+array
+
