@@ -1,0 +1,3 @@
+/Users/noahfrankel/Documents/CompressionTest/comptest/.DS_Store.php
+/Users/noahfrankel/Documents/CompressionTest/comptest/Cracking the Coding Interview, 5th Edition (1).pdf.php
+/Users/noahfrankel/Documents/CompressionTest/comptest/Lecture 1 Midevil islam.txt.php

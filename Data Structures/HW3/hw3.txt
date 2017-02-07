@@ -1,0 +1,18 @@
+Noah Frankel
+
+For the design of the regional database i chose to use an Array to store all the financial transactions for the day. The reasoning behind this is that throughout the day, transactions are merely added to the database. The only thing that takes place besides adding transactions is retrieving information for customers about their transaction. Using an array makes this process a lot easier as each transaction has an ID which can be accessed easily in the array. Additionally, of this to work, the array needs to be infinite size, which is accomplished through copying the array to a new array after one is maxed out. At the end of the business day, all the arrays should be copied into a single array which will be used to create the corporate database for all the transactions. this single array will be used as the storage for all the regional database transactions which you can later retrieve information if you need from the aggregated transactions later on. After which the corporate datebase will be constructed using the array and to construct a linked list. From the corporate database, at the end of the week, will be copied into a new linked list for the product line owners to present to the CEO. This allows for easy retrieval of any information needed about any transaction which occurred that week. 
+
+Run Times:
+
+Adding a transaction to the array is a constant runtime because you're either inserting or creating a new array and inserting
+
+Altering any transaction and giving the details of the transaction would be O(1) since it is just indexing the array
+
+
+The process for creating the linked list is as follows: you have the array with all the transactions from the day. you start off with the first element of the array and insert it into the list. next you take the second element and check it with the first. if they are by the same customer then the transactions are combined into a single aggregate transaction which will be stores in that index of the list. This process will go on until the list is filled and condensed into single and aggregate transactions. this process takes care of reviewing all the transactions. combining into aggregate transactions and "deleting" anything which is from the same customer. the runtime for this process would be O(n^2) because you have to looping through the array and list and comparing.
+
+for deleting an element from the List, the runtime would be O(n) because you just iterate through the list and the deleting process is simple. 
+
+Product line managers will present from the linked list for the week created from the corporate database. if they need to look up any details, the runtime would be O(n) because it is searching though a list. retrieving an aggregate transaction, looking at the components, inserting them back into the central database, and deleting is all O(n) because all you have to do every time is run through the list until you find what you need. 
+
+
