@@ -1,0 +1,55 @@
+HW 1
+1. Modify the version of Mergesort in these
+slides to use threads to sort the subarrays
+using a new thread for each subarray. Call
+that class “MergesortParallelNaive”.
+
+2. Instrument both the single-threaded
+Mergesort in these slides as well as
+MergesortParallelNaive to print to console
+how long of an array it sorted and how
+many milliseconds the sort took, and also
+return the number of milliseconds
+
+  1. It should only report this information ONCE for
+each call to the public sort method
+
+3. Write a new version of your threaded code
+called “MergesortParallelSmart” that has both
+multithreaded and single threaded sort code,
+and which takes a double S as a parameter.
+
+4. The private sort method of
+MergesortParallelSmart must use single
+threaded code when the length of the
+array/subarray is <= S, and it should use
+multithreaded code when the length is > S.
+
+  1. It must print out to the console when it is switching to
+or from the threaded or non-threaded code. It should
+print the size of the data and which version of the sort
+it is switching to. Include the thread id
+(java.lang.Thread.getId()) in the print out.
+
+  2. It MUST NOT print this out on every recursive call –
+only when it is switching
+
+5. Write a main method that does the
+following:
+  
+  1. Generate random numeric data sets of various
+seizes (10, 102
+, … , 10n
+) (see Math.random)
+
+  2. Call both Mergesort and
+MergesortParallelNaive and identify the size of
+input below which the Threaded version is
+SLOWER because of the overhead of creating
+threads. Let’s call that size S.
+
+  3. Call MergesortParallelSmart with set of
+random numeric data which is of size 10 * S
+
+
+  
